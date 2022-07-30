@@ -1,8 +1,31 @@
 .calculator {
     padding: 20px;
-    height: 700px;
-    width: 400px;
+    height: 380px;
     overflow: hidden;
     border-radius: 20px;
-    background-color: var();
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.calculator-btns {
+    display: grid;
+    height: 380px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.calculator-btns button {
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.calculator-btns .btn_op {
+    color: #d400ff;
 }

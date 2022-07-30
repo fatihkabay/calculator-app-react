@@ -6,11 +6,7 @@ import { btns, BTN_ACTIONS } from './btnConfig';
 const calculator = () => {
   return (
     <div className="calculator">
-        <div className="calculator_result">
-            <div className="calculator_result_exp"></div>
-            <div className="calculator_result_exp"></div>
-        </div>
-        <div className="calculator_btns">
+        <div className="calculator-btns">
             {
                 btns.map((item, index) => ( 
                     <button key={index} className={item.class}>

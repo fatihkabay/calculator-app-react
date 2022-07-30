@@ -28,37 +28,37 @@ export const btns = [
     {
         display: '7',
         action: BTN_ACTIONS.ADD,
-        class: 'btn_op'
+        class: 'btn_o'
     },
     {
         display: '8',
         action: BTN_ACTIONS.ADD,
-        class: 'btn_op'
+        class: 'btn_o'
     },
     {
         display: '9',
         action: BTN_ACTIONS.ADD,
-        class: 'btn_op'
+        class: 'btn_o'
     },
     {
-        display: 'X',
+        display: 'x',
         action: BTN_ACTIONS.ADD,
         class: 'btn_op'
     },
     {
         display: '4',
         action: BTN_ACTIONS.ADD,
-        class: 'btn_op'
+        class: 'btn_o'
     },
     {
         display: '5',
         action: BTN_ACTIONS.ADD,
-        class: 'btn_op'
+        class: 'btn_o'
     },
     {
         display: '6',
         action: BTN_ACTIONS.ADD,
-        class: 'btn_op'
+        class: 'btn_o'
     },
     {
         display: '-',
@@ -68,17 +68,17 @@ export const btns = [
     {
         display: '1',
         action: BTN_ACTIONS.ADD,
-        class: 'btn_op'
+        class: 'btn_o'
     },
     {
         display: '2',
         action: BTN_ACTIONS.ADD,
-        class: 'btn_op'
+        class: 'btn_o'
     },
     {
         display: '3',
         action: BTN_ACTIONS.ADD,
-        class: 'btn_op'
+        class: 'btn_o'
     },
     {
         display: '+',
@@ -86,14 +86,19 @@ export const btns = [
         class: 'btn_op'
     },
     {
+        display: '',
+        action: BTN_ACTIONS.ADD,
+        class: 'btn_o'
+    },
+    {
         display: '0',
         action: BTN_ACTIONS.ADD,
-        class: 'btn_0'
+        class: 'btn_o'
     },
     {
         display: '.',
         action: BTN_ACTIONS.ADD,
-        class: 'btn_op'
+        class: 'btn_o'
     },
     {
         display: '=',

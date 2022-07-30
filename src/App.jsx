@@ -3,14 +3,16 @@ import Calculator from "./componenets/calculator";
 function App() {
   return (
     <div className="container">
-      <span>Calc-u-later</span>
+      
       <div className="app-calc">
+        <span className="created-name">Created by Fatih Kabay</span>
         <div className="calc-wrapper">
-          <input className="calc-input" type="text" />
+          <input className="calc-input" type="text" disabled  />
           <hr />
          <Calculator/>
         </div>
       </div>
+      
     </div>
   );
 }
