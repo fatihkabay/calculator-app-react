@@ -11,16 +11,29 @@ span {
   border-radius: 10px;
 }
 
-@media screen and (max-width: 500px){
-   body {
-    background-color: #fff;
-   } 
+.calc-input {
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  border-bottom: 1px solid #d9d9d9;
+  font-weight: bold;
+  font-size: 20px;
+  height: 90px;
+}
 
-   .calculator{
-    width: 335px;
-   }
+@media screen and (max-width: 500px) {
+  body {
+    background-color: #fff;
+  }
+
+  .calculator {
+    width: 300px;
+  }
 
   span {
     color: #212121;
+    font-size: 1.8rem;
   }
 }
