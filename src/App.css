@@ -4,25 +4,12 @@
   align-items: center;
   background-color: #FAFAFA;
   width: 500px;
-  height: 500px;
   border-radius: 6px;
   box-shadow: 0 0 4px 4px #8E24AA;
 }
 
 .calc-wrapper {
-  width: 85%;
-}
-
-.calc-input {
-  background-color: #FAFAFA;
-  outline: none;
-  border: none;
-  height: 90px;
-  width: 100%;
-  padding: 0;
-  font-weight: bold;
-  font-size: 20px;
-  direction: rtl;
+  width: 70%;
 }
 
 hr {

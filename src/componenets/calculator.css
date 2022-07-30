@@ -14,6 +14,7 @@
     height: 380px;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+    margin: 20px;
 }
 
 .calculator-btns button {
@@ -29,3 +30,16 @@
 .calculator-btns .btn_op {
     color: #d400ff;
 }
+
+.calc-input {
+    background-color: #FAFAFA;
+    outline: none;
+    border: none;
+    height: 90px;
+    width: 95%;
+    font-weight: bold;
+    font-size: 25px;
+    direction: rtl;
+}
+
+
