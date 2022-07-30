@@ -31,7 +31,6 @@ span {
 }
 
 .buttons {
-
   margin-top: 10px;
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
@@ -39,16 +38,17 @@ span {
 
 .calc-button {
   border: 1px solid #d9d9d9;
-  background: #ffffff;
+  background: #FAFAFA;
   border-radius: 3px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60px;
+  height: 75px;
   outline: none;
   cursor: pointer;
   color: black;
   font-size: 12px;
+  border: none;
 }
 
 .calc-button:hover {
