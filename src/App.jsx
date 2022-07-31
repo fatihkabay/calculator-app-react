@@ -1,15 +1,15 @@
 import "./App.css";
-import Calculator from "./componenets/calculator";
+import Calculator from "./componenets/Calculator";
 function App() {
   return (
     <div className="container">
-      <div className="app-calc"><span className="created-name">Created by Fatih Kabay</span>
+
         <div className="calc-wrapper">
          <Calculator/>
         </div>
       </div>
       
-    </div>
+   
   );
 }
 
