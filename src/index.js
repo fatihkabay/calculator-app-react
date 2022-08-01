@@ -8,6 +8,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json"></link>
   </React.StrictMode>
 );
 
