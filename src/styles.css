@@ -15,6 +15,22 @@ body {
     justify-content: center;
 }
 
+.container > button {
+    font-size: 1.6rem;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    background-color: #dfdfdf;
+}
+
+.container > button:hover {
+    background-image: linear-gradient(to right, #ff8400, #00f7ff);
+}
+
+.container > button:focus {
+    background-color: #b7b7b7;
+}
+
 .span-two {
     grid-column: span 2;
 }
@@ -26,6 +42,9 @@ body {
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-around;
+    padding: .75rem;
+    word-break: break-word;
+    word-break: break-all;
 }
 
 .output .previous-operand {
@@ -36,13 +55,4 @@ body {
 .output .current-operand {
     color: #fff;
     font-size: 2.5rem;
-}
-
-button {
-    font-size: larger;
-    cursor: pointer;
-}
-
-button:hover {
-    background-image: linear-gradient(to right, #ff8400, #00f7ff);
 }
