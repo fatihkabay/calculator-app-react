@@ -2,8 +2,22 @@ import React, { useReducer } from 'react'
 import "./App.css"
 import "./styles.css"
 
-function reducer(state, action) {
+const ACTIONS = {
+  ADD_DIGIT: 'add-digit',
+  CHOOSE_OPERATION: 'choose_operation',
+  CLEAR: 'clear',
+  DELETE_DIGIT: 'delete_digit',
+  EVALUATE: 'evaluate'
+}
 
+function reducer(state, { type, payload}) {
+   switch(type) {
+    case ACTÝONS.ADD:
+      return {
+        ...state,
+        currentOperand: `${currentOperand}${payload.digit}`
+      }
+   }
 }
 
 function App() {
