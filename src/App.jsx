@@ -31,7 +31,7 @@ function reducer(state, { type, payload }) {
 
       return {
         ...state,
-        currentOperand: `${currentOperand || ""}${payload.digit}`,
+        currentOperand: `${state.currentOperand || ""}${payload.digit}`,
       };
     case ACTIONS.CHOOSE_OPERATION:
       if (state.currentOperand == null && state.previousOperand == null) {
@@ -53,7 +53,7 @@ function reducer(state, { type, payload }) {
       }
       return {
         ...state,
-        previousOperand: evaluate(state),
+        previousOperand: eveluate(state),
         operation: payload.operation,
         currentOperand: null,
       };
@@ -73,14 +73,14 @@ function reducer(state, { type, payload }) {
           }
           return {
             ...state,
-            currentOperand: state.currentOperand.slice(0, -1)
+            currentOperand: state.currntOperand.slice(0, -1)
           }
-        case ACTIONS.EVALUATE: 
-    if (state.operation != null ||
-        state.currentOperand == null || 
-        state.previousOperand == null){
-      return state
-    }
+    case ACTIONS.EVALUATE: 
+      if (state.operation != null ||
+          state.currentOperand == null || 
+          state.previousOperand == null){
+        return state
+      }
     return {
       ...state,
       overwrite: true,
@@ -88,6 +88,8 @@ function reducer(state, { type, payload }) {
       operation: null,
       currentOperand: eveluate(state)
     }
+    default: 
+      break;
 }
 }
 function eveluate({ currentOperand, previousOperand, operation }) {
@@ -108,11 +110,13 @@ function eveluate({ currentOperand, previousOperand, operation }) {
     case "/":
       computation = prev / current;
       break
+    default:
+      break;
   }
   return computation.toString()
 }
 
-const INTEGER_FORMATTER = new Int1.NumberFormat("en-us", {
+const INTEGER_FORMATTER = new Intl.NumberFormat("en-us", {
   maxinumFractionDigits: 0,
 })
 function formatOperand(operand) {
