@@ -163,7 +163,7 @@ function App() {
       <OperationButton operation="-" dispatch={dispatch} />
       <DigitButton digit="." dispatch={dispatch} />
       <DigitButton digit="0" dispatch={dispatch} />
-      <OperationButton className="span-two"
+      <OperationButton 
       onClick={() => dispatch({ type: ACTIONS.EVALUATE })} operation="=" dispatch={dispatch} />
     </div>
   );
